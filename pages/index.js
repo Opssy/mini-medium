@@ -18,7 +18,7 @@ export default function Home(props){
 /* posts are fetched server side and passed in as props */
   /* see getServerSideProps */
 
-  const { post } = props
+  const { posts } = props
   const account = useContext(AccountContext)
 
   const router = useRouter()

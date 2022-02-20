@@ -48,8 +48,8 @@ function MyApp({ Component, pageProps }) {
         <div className={header}>
           <Link href="/">
             <a>
-              <img src='/logo.svg' alt='React Logo' />
-              style = {{ width: '50px' }}
+              <img src='/logo.svg' alt='React Logo' style = {{ width:'50px'}}/>
+              
             </a>
           </Link>
           <Link href='/'>
