@@ -46,17 +46,11 @@ function MyApp({ Component, pageProps }) {
     <div>
       <nav className={nav}>
         <div className={header}>
-          <Link href="/">
-            <a>
-              <img src='/logo.svg' alt='React Logo' style = {{ width:'50px'}}/>
-              
-            </a>
-          </Link>
           <Link href='/'>
-            <a>
+            <a  className={link}>
               <div className={titleContainer}>
-                <h2 className={title}> Full Stack</h2>
-                <p className={description}>Web3</p>
+                <h2 className={title}>Medium</h2>
+                <p className={description}>CMS built on blockchain</p>
               </div>
             </a>
           </Link>
@@ -127,6 +121,7 @@ const header = css`
 const description = css`
   margin: 0;
   color: #999999;
+  margin-top: 10px;
 `
 
 const titleContainer = css`
@@ -134,11 +129,11 @@ const titleContainer = css`
   flex-direction: column;
   padding-left: 15px;
 `
-
 const title = css`
   margin-left: 30px;
   font-weight: 500;
   margin: 0;
+  text-decoration: none;
 `
 
 const buttonContainer = css`
@@ -163,6 +158,7 @@ const link = css`
   margin: 0px 40px 0px 0px;
   font-size: 16px;
   font-weight: 400;
+  text-decoration: none;
 `
 
 export default MyApp
